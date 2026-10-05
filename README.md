@@ -1,19 +1,27 @@
-Silas News Prototype
+Silas News & Updates
 
-A standalone News & Updates prototype converted from the Learn STEM with Silas concept.
-
-
-Run
-
-Open index.html in a browser.
+A mobile-friendly static news and updates prototype.
 
 
-GitHub Pages
-
-Upload index.html, style.css, and script.js to the repository root, then enable GitHub Pages from Settings → Pages → Deploy from branch.
+Included
 
 
-Next upgrade
+Latest stories with search and category filters
 
-Connect a trusted news API and an AI API through a secure backend/serverless function. Do not put private API keys in browser JavaScript.
+Nigeria, World, Technology, Education and Sports sections
+
+Breaking-news ticker
+
+Search modal and article preview modal
+
+Dark mode saved in the browser
+
+Silas AI demo interface
+
+
+Important
+
+The site is fully static and GitHub Pages friendly. The AI demo does not expose an API key. For real online AI/news data, use a secure server-side API or serverless function.
+
+
 
