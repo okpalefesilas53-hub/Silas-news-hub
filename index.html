@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Silas News — News & Updates</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="topbar"><span>Monday, October 5, 2026</span><span>Stay informed. Stay ahead.</span></div>
+  <nav>
+    <a class="logo" href="#"><span>SN</span> Silas News</a>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+    <div id="navlinks">
+      <a href="#latest">Latest</a><a href="#nigeria">Nigeria</a><a href="#world">World</a>
+      <a href="#tech">Technology</a><a href="#education">Education</a><a href="#sports">Sports</a>
+    </div>
+    <button class="theme" onclick="toggleTheme()">◐</button>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <span class="breaking">● BREAKING & UPDATES</span>
+    <h1>News that matters,<br><em>updates you can use.</em></h1>
+    <p>Silas News brings together important Nigerian, world, education, technology, sports and entertainment updates in one simple place.</p>
+    <a class="btn" href="#latest">Read latest stories →</a>
+  </div>
+  <div class="hero-card">
+    <span class="tag">FEATURED</span>
+    <h2>Welcome to the new Silas News prototype</h2>
+    <p>Your homepage for fast, readable and organized updates.</p>
+    <small>Updated today • Silas News</small>
+  </div>
+</section>
+
+<section class="ticker"><strong>LIVE</strong><div id="tickerText">Welcome to Silas News — check back for the latest updates.</div></section>
+
+<section id="latest" class="section">
+  <div class="section-head"><div><span class="eyebrow">TOP STORIES</span><h2>Latest News</h2></div><button onclick="refreshNews()">↻ Refresh</button></div>
+  <div id="newsGrid" class="grid"></div>
+</section>
+
+<section id="nigeria" class="section category">
+  <div class="section-head"><div><span class="eyebrow">NIGERIA</span><h2>What’s happening in Nigeria</h2></div></div>
+  <div class="feature-row">
+    <article class="large-card"><div class="image nigeria">🇳🇬</div><div><span class="tag">Nigeria</span><h3>Important national updates at a glance</h3><p>Follow major developments, public announcements and stories affecting everyday life.</p></div></article>
+    <article class="side-card"><b>QUICK UPDATE</b><h3>Keep this section for verified local stories.</h3><p>Connect the site to a trusted news API to replace these prototype stories with live data.</p></article>
+  </div>
+</section>
+
+<section id="tech" class="section">
+  <div class="section-head"><div><span class="eyebrow">TECH & AI</span><h2>Technology</h2></div></div>
+  <div class="mini-grid">
+    <article><span class="icon">🤖</span><h3>AI is changing how people learn</h3><p>Explore practical AI developments and digital tools.</p></article>
+    <article><span class="icon">💻</span><h3>New tools and apps</h3><p>Discover useful technology without the jargon.</p></article>
+    <article><span class="icon">🔐</span><h3>Digital safety</h3><p>Simple explanations of online security and privacy.</p></article>
+  </div>
+</section>
+
+<section id="education" class="section dark">
+  <div class="section-head"><div><span class="eyebrow">EDUCATION</span><h2>Education Updates</h2></div></div>
+  <div class="edu"><div class="edu-number">01</div><div><h3>JAMB, university and school updates</h3><p>A dedicated place for admissions, examination dates, school announcements and student opportunities.</p></div></div>
+  <div class="edu"><div class="edu-number">02</div><div><h3>Scholarships & opportunities</h3><p>Highlight competitions, scholarships, hackathons and youth opportunities.</p></div></div>
+</section>
+
+<section id="sports" class="section">
+  <div class="section-head"><div><span class="eyebrow">SPORTS</span><h2>Sports Desk</h2></div></div>
+  <div class="sport-card"><span>⚽</span><div><h3>Football and major sporting updates</h3><p>Results, fixtures, transfers and stories from around the sporting world.</p></div></div>
+</section>
+
+<section class="ai-box">
+  <div><span class="eyebrow">SILAS AI</span><h2>Ask about the news.</h2><p>This prototype includes the interface for an AI assistant. Connect an AI API to make it answer questions about current stories.</p>
+  <div class="chat"><input id="question" placeholder="Ask: What's the latest news?"><button onclick="askAI()">Ask</button></div><div id="answer" class="answer">Silas AI is ready.</div></div>
+</section>
+</main>
+
+<footer><div class="logo"><span>SN</span> Silas News</div><p>Independent prototype • Built for fast, useful updates.</p><small>© 2026 Silas News</small></footer>
+<script src="script.js"></script>
+</body>
+</html>
