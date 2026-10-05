@@ -1,27 +1,18 @@
-Silas News & Updates
+# Silas News & Updates
 
-A mobile-friendly static news and updates prototype.
+A static, API-free news website designed for GitHub Pages.
 
+## How to add a story
+Open `script.js` and find `const stories = [`. Add another object using this format:
 
-Included
+```js
+{cat:'Nigeria',icon:'🇳🇬',title:'Your headline',text:'A short summary of the story.',source:'Official source name'}
+```
 
+Supported categories can be any category you want, for example Nigeria, Education, Technology, World, Sports, or Entertainment.
 
-Latest stories with search and category filters
+## Publish on GitHub Pages
+Replace the old `index.html`, `style.css`, `script.js`, and `README.md` with these files. Keep `index.html` in the repository's main/root folder.
 
-Nigeria, World, Technology, Education and Sports sections
-
-Breaking-news ticker
-
-Search modal and article preview modal
-
-Dark mode saved in the browser
-
-Silas AI demo interface
-
-
-Important
-
-The site is fully static and GitHub Pages friendly. The AI demo does not expose an API key. For real online AI/news data, use a secure server-side API or serverless function.
-
-
-
+## Important
+This version does **not** use an API, database, or external AI service. News is manually added to `script.js`, making it suitable for a simple GitHub Pages deployment.
